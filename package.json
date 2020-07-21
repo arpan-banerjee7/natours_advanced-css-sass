@@ -1,0 +1,29 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for Natours",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss css/main.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass scss/main.scss css/main.comp.css",
+    "concat:css": "concat -o css/main.concat.css css/icon-fonts.css css/main.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/main.concat.css -o css/main.prefix.css",
+    "compress:css": "node-sass css/main.prefix.css css/main.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
+  "author": "Aakash",
+  "license": "ISC",
+  "dependencies": {
+    "event-stream": "^3.3.4",
+    "npm": "^6.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "concat": "^1.0.3",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.0.1"
+  }
+}
