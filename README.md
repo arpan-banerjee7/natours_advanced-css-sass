@@ -1,9 +1,8 @@
-### A webite for a fictional company that offers tours in the nature.
+## A webite for a fictional company that offers tours in the nature.
 
-### Completely Responsive
+#### Completely Responsive design with animations.
 
-### Built using pure CSS(haven't used Flexbox or CSS Grid)
+#### Credits Advanced CSS and Sass course by Jonas(Udemy)
 
-### Project of Advanced CSS and Sass course by Jonas(Udemy)
+### [View it here ! ](https://naughty-ride-2c2505.netlify.app/)
 
-### [VIEW PROJECT](https://aakashsr.github.io/Natours/)
